@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riya Gupta| Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: #1e1e2f;
+      position: relative;
+    }
+
+    header img {
+      width: 140px;
+      border-radius: 50%;
+      border: 4px solid #00fff7;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 10px auto;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #00fff7;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: #00fff7;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .skills div {
+      background: #27293d;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .skills div:hover {
+      transform: scale(1.05);
+      background: #00fff710;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #27293d;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00fff755;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    .dark-toggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      padding: 10px 15px;
+      border: none;
+      background: #00fff7;
+      color: #000;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .dark {
+      background: #fff;
+      color: #000;
+    }
+    .dark header,
+    .dark nav,
+    .dark section,
+    .dark .project,
+    .dark .skills div {
+      background: #f0f0f0 !important;
+      color: #000 !important;
+    }
+  </style>
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Mode</button>
+
+  <header>
+    <img src="riyasis pic.jpg" alt="Profile Photo">
+    <h1>Riya Gupta</h1>
+    <p>Full Stack Web Developer | Java Spring Boot | React | MongoDB</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a Electronic and communication Engineer student and passionate Web Developer with a focus on building clean, interactive and modern interfaces using the latest technologies. Experienced in Java, Spring Boot, React.js, and MongoDB. I love collaborating in team environments and bringing creative ideas to life.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div>🌐 HTML5</div>
+      <div>🎨 CSS3</div>
+      <div>⚙ JavaScript</div>
+      <div>⚛ React.js</div>
+      <div>☕ Java</div>
+      <div>🌱 Spring Boot</div>
+      <div>🗄 MongoDB</div>
+      <div>🐙 Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>📚 Bookstore Management</h3>
+        <p>A full-stack app using Node.js, Express, and MongoDB with an admin dashboard for managing books and authors.</p>
+      </div>
+      <div class="project">
+        <h3>🎮 Tic-Tac-Toe Game</h3>
+        <p>A visually rich Tic-Tac-Toe game with AI opponent, animations, and responsive design built using JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>🧑‍💻 Portfolio Website</h3>
+        <p>This portfolio itself - built to demonstrate design, structure, and interactivity skills using pure HTML/CSS/JS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>📧 Email: riyagupta.ece2023@ritroorkee.com</p>
+    <p>📱 LinkedIn: <a href="https://www.linkedin.com/in/riya-gupta-95481832a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color:#00fff7">linkedin.com/in/yourprofile</a></p>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Riya Gupta. All rights reserved.
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
